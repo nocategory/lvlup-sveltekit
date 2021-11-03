@@ -11,8 +11,11 @@
 </script>
 
 <script>
+	import Hi from '../../blogposts/hi.md';
 	export let post;
 </script>
 
 <h1 class="text-3xl">{post.title}</h1>
-<h4>{post.body}</h4>
+
+<h3 class="text-2xl">Markdown:</h3>
+<Hi />

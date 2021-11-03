@@ -21,7 +21,8 @@
 		"svelte-preprocess": "^4.9.8",
 		"autoprefixer": "^10.3.7",
 		"cssnano": "^5.0.8",
-		"tailwindcss": "next"
+		"tailwindcss": "next",
+		"mdsvex": "^0.9.8"
 	},
 	"type": "module"
 }
