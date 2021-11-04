@@ -1,21 +1,18 @@
 <script context="module">
 	export async function load({ page }) {
-		const post = {
-			title: page.params.slug,
-			body: 'lorem ipsum dolor sit amet'
-		};
+		// https://github.com/sveltejs/kit/issues/1326
+		// kinda broken, but this sort of works 👇
+		const Post = await import(`${page.params.slug}.md`).default;
+
 		return {
-			props: { post }
+			props: { Post }
 		};
 	}
 </script>
 
 <script>
-	import Hi from '../../blogposts/hi.md';
-	export let post;
+	let Post;
 </script>
 
-<h1 class="text-3xl">{post.title}</h1>
-
 <h3 class="text-2xl">Markdown:</h3>
-<Hi />
+<Post />
