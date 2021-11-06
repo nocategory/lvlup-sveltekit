@@ -1,8 +1,9 @@
 <header>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About Us</a></li>
+			<li><a sveltekit:prefetch href="/">Home</a></li>
+			<li><a sveltekit:prefetch href="/about">About Us</a></li>
+			<li><a sveltekit:prefetch href="/posts">Posts</a></li>
 		</ul>
 	</nav>
 </header>

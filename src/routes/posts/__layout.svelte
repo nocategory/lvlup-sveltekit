@@ -23,7 +23,7 @@
 <h2>Archive</h2>
 <ul>
 	{#each postsInfo as postInfo}
-		<li><a href={`/posts/${postInfo.fileName}`}>{postInfo.title}</a></li>
+		<li><a sveltekit:prefetch href={`/posts/${postInfo.fileName}`}>{postInfo.title}</a></li>
 	{/each}
 </ul>
 
